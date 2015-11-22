@@ -1,16 +1,17 @@
 {
-    "name": “praetorium-web-client”,
+    "name": "praetorium-web-client",
     "config": {
-        "dist": "/Users/raimon/Development/deploy/whab/__files/"
+        "dist": "dist/__files/"
     },
     "devDependencies": {
         "jshint": "latest",
         "watch": "latest"
     },
     "scripts": {
+        "clean": "rm -rf dist",
         "lint": "jshint js/main.js",
         "prebuild:html": "rm -rf $npm_package_config_dist/index.html",
-        "build:html": "cp index.html $npm_package_config_dist",
+        "build:html": "mkdir -p $npm_package_config_dist && cp index.html $npm_package_config_dist",
         "prebuild:images": "rm -rf $npm_package_config_dist/images",
         "build:images": "cp -R images $npm_package_config_dist",
         "prebuild:js": "npm run lint && rm -rf $npm_package_config_dist/js",
@@ -18,7 +19,9 @@
         "prebuild:css": "rm -rf $npm_package_config_dist/css",
         "build:css": "cp -R css $npm_package_config_dist",
         "build": "npm run build:html && npm run build:images && npm run build:css && npm run build:js",
-        "build:watch": "watch 'npm run build' ."
+        "build:watch": "watch 'npm run build' .",
+        "prewiremock": "mkdir -p $npm_package_config_dist && rm -rf dist/mappings && rm -rf $npm_package_config_dist/stubs",
+        "wiremock": "cp -R wiremock/mappings dist/mappings && cp -R wiremock/stubs $npm_package_config_dist/stubs && java -jar ~/Development/Servers/wiremock-1.54-standalone.jar --root-dir dist/"
     },
     "jshintConfig": {
         "globals": {

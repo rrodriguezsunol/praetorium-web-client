@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/game_systems"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "bodyFileName": "stubs/game_systems.json"
+    }
+}

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Fantasy Battles: The 9th Age",
+        "races": [
+            "Beast Herds",
+            "Daemon Legion",
+            "Dwarven Holds",
+            "Elves of Darkness",
+            "Elves of Light",
+            "Elves of Nature",
+            "Empire of Men",
+            "Entombed Dynasties",
+            "Greenhide Horde",
+            "Infernal Dwarves",
+            "Kingdom of Chivalry",
+            "Ogre Tribes",
+            "Ratmen of Underblight",
+            "Reptilians",
+            "Vampire Covenant",
+            "Warriors of the Wastes"
+        ]
+    },
+    {
+        "name": "Warhammer Fantasy: 8th Edition",
+        "races": [
+            "Beastmen",
+            "Bretonnia",
+            "Dark Elves",
+            "The Empire",
+            "Vampire Counts",
+            "Warriors of Chaos",
+            "Wood Elves"
+        ]
+    }
+]

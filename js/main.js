@@ -1,3 +1,5 @@
+/* global Handlebars */
+
 jQuery(document).ready(function init() {
     "use strict";
     
@@ -155,7 +157,7 @@ jQuery(document).ready(function init() {
         }
     });
     
-    newRosterDialog.gameSystemField.on("input", function () {
-        availableGameSystems
-    });
+//    newRosterDialog.gameSystemField.on("input", function () {
+//        availableGameSystems
+//    });
 });
