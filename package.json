@@ -1,0 +1,30 @@
+{
+    "name": “praetorium-web-client”,
+    "config": {
+        "dist": "/Users/raimon/Development/deploy/whab/__files/"
+    },
+    "devDependencies": {
+        "jshint": "latest",
+        "watch": "latest"
+    },
+    "scripts": {
+        "lint": "jshint js/main.js",
+        "prebuild:html": "rm -rf $npm_package_config_dist/index.html",
+        "build:html": "cp index.html $npm_package_config_dist",
+        "prebuild:images": "rm -rf $npm_package_config_dist/images",
+        "build:images": "cp -R images $npm_package_config_dist",
+        "prebuild:js": "npm run lint && rm -rf $npm_package_config_dist/js",
+        "build:js": "cp -R js $npm_package_config_dist",
+        "prebuild:css": "rm -rf $npm_package_config_dist/css",
+        "build:css": "cp -R css $npm_package_config_dist",
+        "build": "npm run build:html && npm run build:images && npm run build:css && npm run build:js",
+        "build:watch": "watch 'npm run build' ."
+    },
+    "jshintConfig": {
+        "globals": {
+            "$": false,
+            "Handlebars": false,
+            "window": false
+        }
+    }
+}
