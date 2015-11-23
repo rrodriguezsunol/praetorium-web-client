@@ -3,21 +3,21 @@
         "name": "Fantasy Battles: The 9th Age",
         "races": [
             "Beast Herds",
-            "Daemon Legion",
+            "Daemon Legions",
+            "Dread Elves",
             "Dwarven Holds",
-            "Elves of Darkness",
-            "Elves of Light",
-            "Elves of Nature",
-            "Empire of Men",
-            "Entombed Dynasties",
-            "Greenhide Horde",
+            "Empire of Sonnstahl",
+            "Highborn Elves",
             "Infernal Dwarves",
-            "Kingdom of Chivalry",
-            "Ogre Tribes",
-            "Ratmen of Underblight",
-            "Reptilians",
+            "Kingdom of Equitaine",
+            "Ogre Khans",
+            "Orcs and Goblins",
+            "Saurian Ancients",
+            "Sylvan Elves",
+            "The Vermin Swarm",
+            "Undying Dynasties",
             "Vampire Covenant",
-            "Warriors of the Wastes"
+            "Warriors of the Dark Gods"
         ]
     },
     {
