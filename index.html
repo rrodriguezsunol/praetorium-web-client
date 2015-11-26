@@ -12,11 +12,11 @@
     </header>
     
     <section class="sidebar">
-        <button type="button" id="new-roster-button" class="myButton">New</button>
+        <button type="button" id="new-roster-button" class="praet-button">New</button>
     </section>
 
     <main>
-        <table id="rosters" class="whabTable">
+        <table id="rosters" class="praet-table">
             <tr>
                 <th>Name</th>
                 <th>Race</th>
@@ -40,33 +40,5 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/handlebars-v3.0.1.js"></script>
     <script src="js/main.js"></script>
-
-    <div id="new-roster-dialog" title="New Roster" hidden>
-        <form id="new-roster-form">
-            <label for="game-system">Game system:</label>
-            <input id="game-system" list="game-systems" autocomplete="off">
-            <datalist id="game-systems">
-                <script id="game-systems-template" type="text/x-handlebars-template">
-                    {{#gameSystems}}
-                    <option value="{{name}}">
-                    {{/gameSystems}}
-                </script>
-            </datalist>
-            <label for="race-field">Race:</label>
-            <input id="race-field" list="races" autocomplete="off">
-            <datalist id="races">
-                <script id="races-template" type="text/x-handlebars-template">
-                    {{#races}}
-                    <option value="{{this}}">
-                    {{/races}}
-                </script>
-            </datalist>
-            <label for="roster-name-field">Name:</label>
-            <input id="roster-name-field" type="text">
-        </form>
-        <div id="new-roster-footer">
-            <p id="race-error-message" class="validationErrorText"></p>
-        </div>
-    </div>
 </body>
 </html>

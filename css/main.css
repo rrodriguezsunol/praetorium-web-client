@@ -1,121 +1,117 @@
 body {
-	/*background-color: #efece5;*/
-	background-color: #FFFCED;
-	font-size: 13px;
-	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    /*background-color: #efece5;*/
+    background-color: #FFFCED;
+    font-size: 13px;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 }
 
 img.title {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.sidebar {
-	float: left;
-	left: 0px;
-	width: 150px;
+    float: left;
+    left: 0px;
+    width: 150px;
 }
 
 main {
-	margin-left: 151px;
+    margin-left: 151px;
 }
 
 datalist {
-	z-index: 1000;
+    z-index: 1000;
 }
 
 button {
-	font-size: 13px;
-	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 13px;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 }
 
-.validationErrorText {
-    color: firebrick;
+.praet-button {
+    background: -moz-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background: -webkit-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background: -ms-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    background-color: #7d5d3b;
+
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    border-radius: 3px;
+    border: 1px solid #54381e;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #4d3534;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.myButton {
-	background: -moz-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background: -webkit-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background: -ms-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-	background-color: #7d5d3b;
-
-	box-shadow: inset 0px 1px 0px 0px #a6827e;
-	border-radius: 3px;
-	border: 1px solid #54381e;
-	cursor: pointer;
-	color: #ffffff;
-	padding: 10px 24px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #4d3534;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.praet-button:hover {
+    background: -moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background: -webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background: -o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background: -ms-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+    background-color: #634b30;
 }
 
-.myButton:hover {
-	background: -moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background: -webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background: -o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background: -ms-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
-	background-color: #634b30;
+.praet-table {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-spacing: 0;
 }
 
-.whabTable {
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	border-spacing: 0;
+.praet-table tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius :5px;
 }
 
-.whabTable tr:last-child td:last-child {
-	-moz-border-radius-bottomright: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	border-bottom-right-radius :5px;
+.praet-table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px;
 }
 
-.whabTable tr:last-child td:first-child {
-	-moz-border-radius-bottomleft:5px;
-	-webkit-border-bottom-left-radius:5px;
-	border-bottom-left-radius:5px;
+.praet-table tr:hover td {
+    background-color: #efece5;
 }
 
-.whabTable tr:hover td {
-	background-color: #efece5;
+.praet-table th {
+    background:-moz-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background:-webkit-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background:-o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background:-ms-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+    background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    background-color:#7d5d3b;
+    padding: 10px;
+    text-align: left;
+    font-weight: normal;
+    color: #ffffff;
 }
 
-.whabTable th {
-	background:-moz-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background:-webkit-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background:-o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background:-ms-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-	background-color:#7d5d3b;
-	padding: 10px;
-	text-align: left;
-	font-weight: normal;
-	color: #ffffff;
+.praet-table th:hover {
+    background:-moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background:-webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background:-o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background:-ms-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+    background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+    background-color: #634b30;
 }
 
-.whabTable th:hover {
-	background:-moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background:-webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background:-o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background:-ms-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
-	background-color: #634b30;
-}
-
-.whabTable td {
-	vertical-align: middle;
-	background-color: #ffffff;
-	border-bottom: 1px solid #efece5;
-	text-align: left;
-	padding: 10px;
-	font-weight: normal;
-	color:#000000;
-	cursor: pointer;
+.praet-table td {
+    vertical-align: middle;
+    background-color: #ffffff;
+    border-bottom: 1px solid #efece5;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+    color:#000000;
+    cursor: pointer;
 }
